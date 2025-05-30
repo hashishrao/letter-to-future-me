@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Letter to the Future Me 🌱</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Sparkle Container for Cursor Trail -->
+  <div id="sparkle-trail"></div>
+
+  <!-- Plant Emoji Burst Container -->
+  <div id="emoji-burst"></div>
+
+  <!-- Floating Leaves (Optional aesthetic widgets) -->
+  <div class="floating-widget leaf" style="top: 10%; left: 5%;">🍃</div>
+  <div class="floating-widget leaf" style="top: 40%; left: 90%;">🌿</div>
+  <div class="floating-widget leaf" style="top: 70%; left: 10%;">🍂</div>
+  
+ <!-- Floating flowers and leaves as emojis -->
+ <div class="floating-widget" style="top:10%; left:15%;">🍃</div>
+ <div class="floating-widget" style="top:30%; left:80%;">🌸</div>
+ <div class="floating-widget" style="top:60%; left:40%;">🌿</div>
+ <div class="floating-widget" style="top:80%; left:70%;">🌼</div>
+ <div class="floating-widget" style="top:50%; left:20%;">🍂</div>
+
+  <main class="container">
+    <h1>🌱 Write a Letter to the Future You</h1>
+    <p class="intro">Take a moment. Breathe. What would you want your future self to remember?</p>
+
+    <form id="contactForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="E.g. Ash" required />
+      <div class="error" id="nameError"></div>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      <div class="error" id="emailError"></div>
+
+      <label for="message">Message to Future You</label>
+      <textarea id="message" name="message" rows="6" placeholder="Dear future me..." required></textarea>
+      <div class="error" id="messageError"></div>
+
+      <button type="submit">Send to the Future ✨</button>
+      <div id="formSuccess" class="success"></div>
+    </form>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/validation.js"></script>
+  <script src="js/cursorTrail.js"></script>
+  <script src="js/emojiClick.js"></script>
+</body>
+</html>

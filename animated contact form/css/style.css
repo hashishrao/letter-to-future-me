@@ -1,0 +1,218 @@
+/* 🌍 Earthy Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #f4f1ee, #cfe3cf);
+    color: #3b3b3b;
+    overflow-x: hidden;
+    cursor: none; /* hide default cursor for magic trail */
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  /* 🍃 Floating Flowers & Leaves Background */
+  .floating-widget {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.3;
+    animation: float 7s ease-in-out infinite;
+    user-select: none;
+    pointer-events: none;
+    color: #5a7d55;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1));
+  }
+  
+  .floating-widget:nth-child(1) {
+    top: 10%;
+    left: 15%;
+    animation-delay: 0s;
+  }
+  .floating-widget:nth-child(2) {
+    top: 30%;
+    left: 80%;
+    animation-delay: 2s;
+    font-size: 2.3rem;
+  }
+  .floating-widget:nth-child(3) {
+    top: 60%;
+    left: 40%;
+    animation-delay: 4s;
+    font-size: 1.8rem;
+  }
+  .floating-widget:nth-child(4) {
+    top: 80%;
+    left: 70%;
+    animation-delay: 5s;
+    font-size: 2.5rem;
+  }
+  .floating-widget:nth-child(5) {
+    top: 50%;
+    left: 20%;
+    animation-delay: 3s;
+    font-size: 2rem;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(7deg); }
+  }
+  
+  /* 📦 Container */
+  .container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 30px 40px;
+    background-color: #fffdfa;
+    border-radius: 20px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+    animation: floatIn 1s ease-in-out forwards;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* 🌿 Title and Intro */
+  h1 {
+    font-size: 2.5rem;
+    color: #2e5d34;
+    text-align: center;
+    margin-bottom: 0.4em;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    user-select: none;
+    animation: flowerFadeIn 1.5s ease forwards;
+  }
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #5a5a5a;
+    font-weight: 500;
+    animation: flowerFadeIn 2s ease forwards;
+  }
+  
+  /* 📝 Form Labels & Inputs with flower-like transitions */
+  form label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: 600;
+    color: #3e4b3e;
+    opacity: 0;
+    transform: scale(0.8) translateY(15px);
+    animation: flowerFadeIn 1.2s ease forwards;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1.8px solid #a9c1aa;
+    border-radius: 10px;
+    background-color: #fcfcf8;
+    font-size: 1.05rem;
+    color: #3b3b3b;
+    box-shadow: inset 0 0 5px #cee4ce88;
+    transition:
+      border-color 0.4s ease,
+      box-shadow 0.4s ease,
+      transform 0.35s ease;
+    outline: none;
+    user-select: text;
+  }
+  
+  /* Focus effect with gentle scaling and glow */
+  form input:focus,
+  form textarea:focus {
+    border-color: #4a944a;
+    box-shadow: 0 0 10px 2px #7cc47caa;
+    transform: scale(1.03);
+  }
+  
+  /* Smooth placeholder fade on focus */
+  form input::placeholder,
+  form textarea::placeholder {
+    transition: opacity 0.3s ease;
+    color: #7a8b6f;
+  }
+  form input:focus::placeholder,
+  form textarea:focus::placeholder {
+    opacity: 0.5;
+  }
+  
+  /* ✅ Submit Button */
+  button[type="submit"] {
+    margin-top: 26px;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #7ebc67, #4a944a);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(74, 148, 74, 0.6);
+    transition:
+      background 0.4s ease,
+      box-shadow 0.4s ease,
+      transform 0.25s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background: linear-gradient(135deg, #5da246, #3a7032);
+    box-shadow: 0 8px 20px rgba(58, 112, 50, 0.8);
+    transform: translateY(-3px);
+  }
+  
+  /* 🎈 Error & Success messages */
+  .error {
+    color: #c0392b;
+    font-size: 0.9em;
+    margin-top: 6px;
+    user-select: none;
+    font-weight: 600;
+    opacity: 0.9;
+  }
+  
+  .success {
+    margin-top: 28px;
+    color: #2ecc71;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+    font-size: 1.1rem;
+    animation: flowerFadeIn 1s ease forwards;
+  }
+  
+  /* Animations */
+  @keyframes flowerFadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.6) translateY(20px);
+      filter: drop-shadow(0 0 0 #7cc47c);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+      filter: drop-shadow(0 3px 4px #7cc47caa);
+    }
+  }
+  
+  @keyframes floatIn {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 600px) {
+    .container {
+      margin: 40px 16px;
+      padding: 20px 25px;
+    }
+  }
