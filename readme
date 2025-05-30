@@ -1,0 +1,70 @@
+# 🌿 Letter to Future Me
+
+A calming, interactive micro-site where you can send a note to your future self — wrapped in magic, movement, and earthy visuals.
+
+![preview](./preview.png) <!-- You can upload a preview image and update the path -->
+
+---
+
+## ✨ Features
+
+- 🌱 **Minimalist Contact Form** – Only one field: your email, to write your future self.
+- 🌸 **Plant Emoji Animations** – Leaves and plants sprout when you interact with elements.
+- 🪄 **Magic Cursor Trail** – Cursor sparkles with soft glowing particles.
+- 🌼 **Flower Typing Animation** – Words blossom as you type.
+- 🌍 **Earthy Themed UI** – Soothing colors and animated floral backgrounds.
+- ✅ **Form Validation** – Ensures you don’t forget your email.
+
+---
+
+## 📸 Preview
+
+Coming soon... (Add a screenshot here after deploying!)
+
+---
+
+## 🚀 Live Demo
+
+🔗 [Click here to visit the site](https://hashishrao.github.io/letter-to-future-me)
+
+---
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3 (with animations and transitions)
+- JavaScript (Vanilla)
+- Git & GitHub
+
+---
+
+## 💡 Inspiration
+
+This project was built to combine:
+- The serenity of **nature** 🌳
+- The power of **reflection** 🧠
+- And the joy of **interactive web design** ✨
+
+The idea: in just a click, you leave behind a message for yourself — in style.
+
+---
+
+## 📬 Write to Your Future Self
+
+Do you believe in growth, reflection, and a better tomorrow?  
+Then this is your reminder: **drop yourself a line** — the future you will thank you 🌱
+
+---
+
+## 🧑‍💻 Author
+
+Made with 🌸 by [Hashish Tekkali Raghavendra Rao](https://github.com/hashishrao)
+
+---
+
+## 📂 Clone & Run Locally
+
+```bash
+git clone https://github.com/hashishrao/letter-to-future-me.git
+cd letter-to-future-me
+open index.html
